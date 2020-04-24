@@ -42,16 +42,25 @@ public class CacheConfiguration {
 <span class="nc" id="L42">            createCache(cm, com.mycompany.myapp.domain.User.class.getName());</span>
 <span class="nc" id="L43">            createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());</span>
 <span class="nc" id="L44">            createCache(cm, com.mycompany.myapp.domain.User.class.getName() + &quot;.authorities&quot;);</span>
+<span class="nc" id="L45">            createCache(cm, com.mycompany.myapp.domain.Restaurant.class.getName());</span>
+<span class="nc" id="L46">            createCache(cm, com.mycompany.myapp.domain.Restaurant.class.getName() + &quot;.cooperatives&quot;);</span>
+<span class="nc" id="L47">            createCache(cm, com.mycompany.myapp.domain.Cooperative.class.getName());</span>
+<span class="nc" id="L48">            createCache(cm, com.mycompany.myapp.domain.Cooperative.class.getName() + &quot;.restaurants&quot;);</span>
+<span class="nc" id="L49">            createCache(cm, com.mycompany.myapp.domain.Basket.class.getName());</span>
+<span class="nc" id="L50">            createCache(cm, com.mycompany.myapp.domain.Product.class.getName());</span>
+<span class="nc" id="L51">            createCache(cm, com.mycompany.myapp.domain.Payment.class.getName());</span>
+<span class="nc" id="L52">            createCache(cm, com.mycompany.myapp.domain.Course.class.getName());</span>
+<span class="nc" id="L53">            createCache(cm, com.mycompany.myapp.domain.Order.class.getName());</span>
             // jhipster-needle-ehcache-add-entry
-<span class="nc" id="L46">        };</span>
+<span class="nc" id="L55">        };</span>
     }
 
     private void createCache(javax.cache.CacheManager cm, String cacheName) {
-<span class="nc" id="L50">        javax.cache.Cache&lt;Object, Object&gt; cache = cm.getCache(cacheName);</span>
-<span class="nc bnc" id="L51" title="All 2 branches missed.">        if (cache == null) {</span>
-<span class="nc" id="L52">            cm.createCache(cacheName, jcacheConfiguration);</span>
+<span class="nc" id="L59">        javax.cache.Cache&lt;Object, Object&gt; cache = cm.getCache(cacheName);</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        if (cache == null) {</span>
+<span class="nc" id="L61">            cm.createCache(cacheName, jcacheConfiguration);</span>
         }
-<span class="nc" id="L54">    }</span>
+<span class="nc" id="L63">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
