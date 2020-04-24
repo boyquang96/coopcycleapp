@@ -1,7 +1,7 @@
 {
-  "name": "coopcycle",
+  "name": "coopcycleapp",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for coopcycle",
+  "description": "Description for coopcycleapp",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [
@@ -97,12 +97,6 @@
     "ts-node": "8.5.4",
     "tslint": "5.20.1",
     "typescript": "3.4.5",
-    "generator-jhipster-docker": "2.5.0",
-    "generator-jhipster-swagger-cli": "3.0.1",
-    "generator-jhipster-leafletmap": "2.0.0",
-    "generator-jhipster-testcontainers": "1.0.0",
-    "generator-jhipster-administration-database": "1.0.4",
-    "generator-jhipster-database-backup": "1.0.7",
     "webdriver-manager": "12.1.7",
     "webpack": "4.41.2",
     "webpack-bundle-analyzer": "3.6.0",

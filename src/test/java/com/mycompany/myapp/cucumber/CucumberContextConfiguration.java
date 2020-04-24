@@ -1,6 +1,6 @@
 package com.mycompany.myapp.cucumber;
 
-import com.mycompany.myapp.CoopcycleApp;
+import com.mycompany.myapp.CoopcycleappApp;
 import io.cucumber.java.Before;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
@@ -8,7 +8,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @SpringBootTest
 @WebAppConfiguration
-@ContextConfiguration(classes = CoopcycleApp.class)
+@ContextConfiguration(classes = CoopcycleappApp.class)
 public class CucumberContextConfiguration {
 
     @Before

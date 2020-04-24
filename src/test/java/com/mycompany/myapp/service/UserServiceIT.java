@@ -1,6 +1,6 @@
 package com.mycompany.myapp.service;
 
-import com.mycompany.myapp.CoopcycleApp;
+import com.mycompany.myapp.CoopcycleappApp;
 import com.mycompany.myapp.config.Constants;
 import com.mycompany.myapp.domain.User;
 import com.mycompany.myapp.repository.UserRepository;
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = CoopcycleApp.class)
+@SpringBootTest(classes = CoopcycleappApp.class)
 @Transactional
 public class UserServiceIT {
 
