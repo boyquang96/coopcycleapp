@@ -24,14 +24,14 @@ describe('Course e2e test', () => {
     await navBarPage.goToEntity('course');
     courseComponentsPage = new CourseComponentsPage();
     await browser.wait(ec.visibilityOf(courseComponentsPage.title), 5000);
-    expect(await courseComponentsPage.getTitle()).to.eq('coopcycleappApp.course.home.title');
+    expect(await courseComponentsPage.getTitle()).to.eq('coopcycleApp.course.home.title');
     await browser.wait(ec.or(ec.visibilityOf(courseComponentsPage.entities), ec.visibilityOf(courseComponentsPage.noResult)), 1000);
   });
 
   it('should load create Course page', async () => {
     await courseComponentsPage.clickOnCreateButton();
     courseUpdatePage = new CourseUpdatePage();
-    expect(await courseUpdatePage.getPageTitle()).to.eq('coopcycleappApp.course.home.createOrEditLabel');
+    expect(await courseUpdatePage.getPageTitle()).to.eq('coopcycleApp.course.home.createOrEditLabel');
     await courseUpdatePage.cancel();
   });
 
@@ -62,7 +62,7 @@ describe('Course e2e test', () => {
     await courseComponentsPage.clickOnLastDeleteButton();
 
     courseDeleteDialog = new CourseDeleteDialog();
-    expect(await courseDeleteDialog.getDialogTitle()).to.eq('coopcycleappApp.course.delete.question');
+    expect(await courseDeleteDialog.getDialogTitle()).to.eq('coopcycleApp.course.delete.question');
     await courseDeleteDialog.clickOnConfirmButton();
 
     expect(await courseComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

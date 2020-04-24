@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Course;
 import com.mycompany.myapp.repository.CourseRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -33,7 +33,7 @@ import com.mycompany.myapp.domain.enumeration.CourseState;
 /**
  * Integration tests for the {@link CourseResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class CourseResourceIT {
 
     private static final CourseState DEFAULT_STATE = CourseState.COMPLETED;

@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
-            <h2 id="jhi-product-heading" jhiTranslate="coopcycleappApp.product.home.createOrEditLabel">Create or edit a Product</h2>
+            <h2 id="jhi-product-heading" jhiTranslate="coopcycleApp.product.home.createOrEditLabel">Create or edit a Product</h2>
 
             <div>
                 <jhi-alert-error></jhi-alert-error>
@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="coopcycleappApp.product.price" for="field_price">Price</label>
+                    <label class="form-control-label" jhiTranslate="coopcycleApp.product.price" for="field_price">Price</label>
                     <input type="number" class="form-control" name="price" id="field_price"
                            formControlName="price"/>
                     <div *ngIf="editForm.get('price')!.invalid && (editForm.get('price')!.dirty || editForm.get('price')!.touched)">
@@ -32,21 +32,21 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="coopcycleappApp.product.disponibility" for="field_disponibility">Disponibility</label>
+                    <label class="form-control-label" jhiTranslate="coopcycleApp.product.disponibility" for="field_disponibility">Disponibility</label>
                     <select class="form-control" name="disponibility" formControlName="disponibility" id="field_disponibility">
-                        <option value="AVAILABLE">{{ 'coopcycleappApp.Disponibility.AVAILABLE' | translate }}</option>
-                        <option value="UNAVAILABLE">{{ 'coopcycleappApp.Disponibility.UNAVAILABLE' | translate }}</option>
+                        <option value="AVAILABLE">{{ 'coopcycleApp.Disponibility.AVAILABLE' | translate }}</option>
+                        <option value="UNAVAILABLE">{{ 'coopcycleApp.Disponibility.UNAVAILABLE' | translate }}</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="coopcycleappApp.product.description" for="field_description">Description</label>
+                    <label class="form-control-label" jhiTranslate="coopcycleApp.product.description" for="field_description">Description</label>
                     <input type="text" class="form-control" name="description" id="field_description"
                            formControlName="description"/>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="coopcycleappApp.product.basket" for="field_basket">Basket</label>
+                    <label class="form-control-label" jhiTranslate="coopcycleApp.product.basket" for="field_basket">Basket</label>
                     <select class="form-control" id="field_basket" name="basket" formControlName="basket">
                         <option [ngValue]="null"></option>
                         <option [ngValue]="basketOption.id === editForm.get('basket')!.value?.id ? editForm.get('basket')!.value : basketOption" *ngFor="let basketOption of baskets; trackBy: trackById">{{ basketOption.id }}</option>
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="coopcycleappApp.product.restaurant" for="field_restaurant">Restaurant</label>
+                    <label class="form-control-label" jhiTranslate="coopcycleApp.product.restaurant" for="field_restaurant">Restaurant</label>
                     <select class="form-control" id="field_restaurant" name="restaurant" formControlName="restaurant">
                         <option [ngValue]="null"></option>
                         <option [ngValue]="restaurantOption.id === editForm.get('restaurant')!.value?.id ? editForm.get('restaurant')!.value : restaurantOption" *ngFor="let restaurantOption of restaurants; trackBy: trackById">{{ restaurantOption.id }}</option>

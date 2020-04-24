@@ -24,7 +24,7 @@ describe('Cooperative e2e test', () => {
     await navBarPage.goToEntity('cooperative');
     cooperativeComponentsPage = new CooperativeComponentsPage();
     await browser.wait(ec.visibilityOf(cooperativeComponentsPage.title), 5000);
-    expect(await cooperativeComponentsPage.getTitle()).to.eq('coopcycleappApp.cooperative.home.title');
+    expect(await cooperativeComponentsPage.getTitle()).to.eq('coopcycleApp.cooperative.home.title');
     await browser.wait(
       ec.or(ec.visibilityOf(cooperativeComponentsPage.entities), ec.visibilityOf(cooperativeComponentsPage.noResult)),
       1000
@@ -34,7 +34,7 @@ describe('Cooperative e2e test', () => {
   it('should load create Cooperative page', async () => {
     await cooperativeComponentsPage.clickOnCreateButton();
     cooperativeUpdatePage = new CooperativeUpdatePage();
-    expect(await cooperativeUpdatePage.getPageTitle()).to.eq('coopcycleappApp.cooperative.home.createOrEditLabel');
+    expect(await cooperativeUpdatePage.getPageTitle()).to.eq('coopcycleApp.cooperative.home.createOrEditLabel');
     await cooperativeUpdatePage.cancel();
   });
 
@@ -65,7 +65,7 @@ describe('Cooperative e2e test', () => {
     await cooperativeComponentsPage.clickOnLastDeleteButton();
 
     cooperativeDeleteDialog = new CooperativeDeleteDialog();
-    expect(await cooperativeDeleteDialog.getDialogTitle()).to.eq('coopcycleappApp.cooperative.delete.question');
+    expect(await cooperativeDeleteDialog.getDialogTitle()).to.eq('coopcycleApp.cooperative.delete.question');
     await cooperativeDeleteDialog.clickOnConfirmButton();
 
     expect(await cooperativeComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

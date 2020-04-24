@@ -33,7 +33,7 @@
             "ownerSide": false
         }
     ],
-    "changelogDate": "20200424004700",
+    "changelogDate": "20200319012800",
     "javadoc": "The Course entity.",
     "entityTableName": "course",
     "dto": "no",

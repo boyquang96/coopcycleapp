@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Basket;
 import com.mycompany.myapp.repository.BasketRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -31,7 +31,7 @@ import com.mycompany.myapp.domain.enumeration.BasketState;
 /**
  * Integration tests for the {@link BasketResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class BasketResourceIT {
 
     private static final Long DEFAULT_BASKET_ID = 1L;

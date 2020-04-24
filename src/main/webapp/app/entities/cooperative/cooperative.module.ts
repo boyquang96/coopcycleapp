@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { CoopcycleappSharedModule } from 'app/shared/shared.module';
+import { CoopcycleSharedModule } from 'app/shared/shared.module';
 import { CooperativeComponent } from './cooperative.component';
 import { CooperativeDetailComponent } from './cooperative-detail.component';
 import { CooperativeUpdateComponent } from './cooperative-update.component';
@@ -9,8 +9,8 @@ import { CooperativeDeleteDialogComponent } from './cooperative-delete-dialog.co
 import { cooperativeRoute } from './cooperative.route';
 
 @NgModule({
-  imports: [CoopcycleappSharedModule, RouterModule.forChild(cooperativeRoute)],
+  imports: [CoopcycleSharedModule, RouterModule.forChild(cooperativeRoute)],
   declarations: [CooperativeComponent, CooperativeDetailComponent, CooperativeUpdateComponent, CooperativeDeleteDialogComponent],
   entryComponents: [CooperativeDeleteDialogComponent]
 })
-export class CoopcycleappCooperativeModule {}
+export class CoopcycleCooperativeModule {}

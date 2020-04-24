@@ -39,7 +39,7 @@ export const cooperativeRoute: Routes = [
     component: CooperativeComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.cooperative.home.title'
+      pageTitle: 'coopcycleApp.cooperative.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const cooperativeRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.cooperative.home.title'
+      pageTitle: 'coopcycleApp.cooperative.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const cooperativeRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.cooperative.home.title'
+      pageTitle: 'coopcycleApp.cooperative.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const cooperativeRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.cooperative.home.title'
+      pageTitle: 'coopcycleApp.cooperative.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

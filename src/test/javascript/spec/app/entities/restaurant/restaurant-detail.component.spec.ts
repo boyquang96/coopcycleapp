@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { RestaurantDetailComponent } from 'app/entities/restaurant/restaurant-detail.component';
 import { Restaurant } from 'app/shared/model/restaurant.model';
 
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [RestaurantDetailComponent],
         providers: [{ provide: ActivatedRoute, useValue: route }]
       })

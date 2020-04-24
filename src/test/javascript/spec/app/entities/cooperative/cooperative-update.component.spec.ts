@@ -3,7 +3,7 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
 import { of } from 'rxjs';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { CooperativeUpdateComponent } from 'app/entities/cooperative/cooperative-update.component';
 import { CooperativeService } from 'app/entities/cooperative/cooperative.service';
 import { Cooperative } from 'app/shared/model/cooperative.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [CooperativeUpdateComponent],
         providers: [FormBuilder]
       })

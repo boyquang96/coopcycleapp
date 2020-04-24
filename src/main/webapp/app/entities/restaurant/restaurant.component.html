@@ -1,10 +1,10 @@
 <div>
     <h2 id="page-heading">
-        <span jhiTranslate="coopcycleappApp.restaurant.home.title">Restaurants</span>
+        <span jhiTranslate="coopcycleApp.restaurant.home.title">Restaurants</span>
 
         <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-restaurant" [routerLink]="['/restaurant/new']">
             <fa-icon icon="plus"></fa-icon>
-            <span  jhiTranslate="coopcycleappApp.restaurant.home.createLabel">
+            <span  jhiTranslate="coopcycleApp.restaurant.home.createLabel">
             Create a new Restaurant
             </span>
         </button>
@@ -15,7 +15,7 @@
     <jhi-alert></jhi-alert>
 
     <div class="alert alert-warning" id="no-result" *ngIf="restaurants?.length === 0">
-        <span jhiTranslate="coopcycleappApp.restaurant.home.notFound">No restaurants found</span>
+        <span jhiTranslate="coopcycleApp.restaurant.home.notFound">No restaurants found</span>
     </div>
 
     <div class="table-responsive" id="entities" *ngIf="restaurants?.length > 0">
@@ -23,9 +23,9 @@
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.restaurant.restaurantId">Restaurant Id</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.restaurant.name">Name</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.restaurant.description">Description</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.restaurant.restaurantId">Restaurant Id</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.restaurant.name">Name</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.restaurant.description">Description</span></th>
                     <th scope="col"></th>
                 </tr>
             </thead>

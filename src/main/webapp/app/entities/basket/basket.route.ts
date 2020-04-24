@@ -39,7 +39,7 @@ export const basketRoute: Routes = [
     component: BasketComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.basket.home.title'
+      pageTitle: 'coopcycleApp.basket.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const basketRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.basket.home.title'
+      pageTitle: 'coopcycleApp.basket.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const basketRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.basket.home.title'
+      pageTitle: 'coopcycleApp.basket.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const basketRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.basket.home.title'
+      pageTitle: 'coopcycleApp.basket.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

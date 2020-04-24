@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.config.Constants;
 import com.mycompany.myapp.domain.User;
 import com.mycompany.myapp.repository.AuthorityRepository;
@@ -38,7 +38,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

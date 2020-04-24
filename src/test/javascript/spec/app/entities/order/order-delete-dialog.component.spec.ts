@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { of } from 'rxjs';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { MockEventManager } from '../../../helpers/mock-event-manager.service';
 import { MockActiveModal } from '../../../helpers/mock-active-modal.service';
 import { OrderDeleteDialogComponent } from 'app/entities/order/order-delete-dialog.component';
@@ -19,7 +19,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [OrderDeleteDialogComponent]
       })
         .overrideTemplate(OrderDeleteDialogComponent, '')

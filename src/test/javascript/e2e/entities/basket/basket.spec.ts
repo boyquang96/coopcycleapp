@@ -24,14 +24,14 @@ describe('Basket e2e test', () => {
     await navBarPage.goToEntity('basket');
     basketComponentsPage = new BasketComponentsPage();
     await browser.wait(ec.visibilityOf(basketComponentsPage.title), 5000);
-    expect(await basketComponentsPage.getTitle()).to.eq('coopcycleappApp.basket.home.title');
+    expect(await basketComponentsPage.getTitle()).to.eq('coopcycleApp.basket.home.title');
     await browser.wait(ec.or(ec.visibilityOf(basketComponentsPage.entities), ec.visibilityOf(basketComponentsPage.noResult)), 1000);
   });
 
   it('should load create Basket page', async () => {
     await basketComponentsPage.clickOnCreateButton();
     basketUpdatePage = new BasketUpdatePage();
-    expect(await basketUpdatePage.getPageTitle()).to.eq('coopcycleappApp.basket.home.createOrEditLabel');
+    expect(await basketUpdatePage.getPageTitle()).to.eq('coopcycleApp.basket.home.createOrEditLabel');
     await basketUpdatePage.cancel();
   });
 
@@ -61,7 +61,7 @@ describe('Basket e2e test', () => {
     await basketComponentsPage.clickOnLastDeleteButton();
 
     basketDeleteDialog = new BasketDeleteDialog();
-    expect(await basketDeleteDialog.getDialogTitle()).to.eq('coopcycleappApp.basket.delete.question');
+    expect(await basketDeleteDialog.getDialogTitle()).to.eq('coopcycleApp.basket.delete.question');
     await basketDeleteDialog.clickOnConfirmButton();
 
     expect(await basketComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

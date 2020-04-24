@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { CooperativeDetailComponent } from 'app/entities/cooperative/cooperative-detail.component';
 import { Cooperative } from 'app/shared/model/cooperative.model';
 
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [CooperativeDetailComponent],
         providers: [{ provide: ActivatedRoute, useValue: route }]
       })

@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Restaurant;
 import com.mycompany.myapp.repository.RestaurantRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link RestaurantResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class RestaurantResourceIT {
 
     private static final Long DEFAULT_RESTAURANT_ID = 1L;

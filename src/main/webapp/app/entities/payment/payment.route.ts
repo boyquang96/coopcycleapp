@@ -39,7 +39,7 @@ export const paymentRoute: Routes = [
     component: PaymentComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.payment.home.title'
+      pageTitle: 'coopcycleApp.payment.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const paymentRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.payment.home.title'
+      pageTitle: 'coopcycleApp.payment.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const paymentRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.payment.home.title'
+      pageTitle: 'coopcycleApp.payment.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const paymentRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.payment.home.title'
+      pageTitle: 'coopcycleApp.payment.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

@@ -36,7 +36,7 @@
             "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20200424004500",
+    "changelogDate": "20200319012600",
     "javadoc": "The Product entity.",
     "entityTableName": "product",
     "dto": "no",

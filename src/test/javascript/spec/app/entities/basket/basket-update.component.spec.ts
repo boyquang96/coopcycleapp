@@ -3,7 +3,7 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
 import { of } from 'rxjs';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { BasketUpdateComponent } from 'app/entities/basket/basket-update.component';
 import { BasketService } from 'app/entities/basket/basket.service';
 import { Basket } from 'app/shared/model/basket.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [BasketUpdateComponent],
         providers: [FormBuilder]
       })

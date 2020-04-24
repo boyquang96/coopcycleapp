@@ -24,14 +24,14 @@ describe('Order e2e test', () => {
     await navBarPage.goToEntity('order');
     orderComponentsPage = new OrderComponentsPage();
     await browser.wait(ec.visibilityOf(orderComponentsPage.title), 5000);
-    expect(await orderComponentsPage.getTitle()).to.eq('coopcycleappApp.order.home.title');
+    expect(await orderComponentsPage.getTitle()).to.eq('coopcycleApp.order.home.title');
     await browser.wait(ec.or(ec.visibilityOf(orderComponentsPage.entities), ec.visibilityOf(orderComponentsPage.noResult)), 1000);
   });
 
   it('should load create Order page', async () => {
     await orderComponentsPage.clickOnCreateButton();
     orderUpdatePage = new OrderUpdatePage();
-    expect(await orderUpdatePage.getPageTitle()).to.eq('coopcycleappApp.order.home.createOrEditLabel');
+    expect(await orderUpdatePage.getPageTitle()).to.eq('coopcycleApp.order.home.createOrEditLabel');
     await orderUpdatePage.cancel();
   });
 
@@ -55,7 +55,7 @@ describe('Order e2e test', () => {
     await orderComponentsPage.clickOnLastDeleteButton();
 
     orderDeleteDialog = new OrderDeleteDialog();
-    expect(await orderDeleteDialog.getDialogTitle()).to.eq('coopcycleappApp.order.delete.question');
+    expect(await orderDeleteDialog.getDialogTitle()).to.eq('coopcycleApp.order.delete.question');
     await orderDeleteDialog.clickOnConfirmButton();
 
     expect(await orderComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

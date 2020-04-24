@@ -1,10 +1,10 @@
 <div>
     <h2 id="page-heading">
-        <span jhiTranslate="coopcycleappApp.course.home.title">Courses</span>
+        <span jhiTranslate="coopcycleApp.course.home.title">Courses</span>
 
         <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-course" [routerLink]="['/course/new']">
             <fa-icon icon="plus"></fa-icon>
-            <span  jhiTranslate="coopcycleappApp.course.home.createLabel">
+            <span  jhiTranslate="coopcycleApp.course.home.createLabel">
             Create a new Course
             </span>
         </button>
@@ -15,7 +15,7 @@
     <jhi-alert></jhi-alert>
 
     <div class="alert alert-warning" id="no-result" *ngIf="courses?.length === 0">
-        <span jhiTranslate="coopcycleappApp.course.home.notFound">No courses found</span>
+        <span jhiTranslate="coopcycleApp.course.home.notFound">No courses found</span>
     </div>
 
     <div class="table-responsive" id="entities" *ngIf="courses?.length > 0">
@@ -23,16 +23,16 @@
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.course.state">State</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.course.deliveryTime">Delivery Time</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.course.restaurant">Restaurant</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.course.state">State</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.course.deliveryTime">Delivery Time</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.course.restaurant">Restaurant</span></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let course of courses ;trackBy: trackId">
                     <td><a [routerLink]="['/course', course.id, 'view']">{{ course.id }}</a></td>
-                    <td jhiTranslate="{{ 'coopcycleappApp.CourseState.' + course.state }}">{{ course.state }}</td>
+                    <td jhiTranslate="{{ 'coopcycleApp.CourseState.' + course.state }}">{{ course.state }}</td>
                     <td>{{ course.deliveryTime | date:'medium' }}</td>
                     <td>
                         <div *ngIf="course.restaurant">

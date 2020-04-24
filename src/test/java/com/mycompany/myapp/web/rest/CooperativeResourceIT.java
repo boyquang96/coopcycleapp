@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Cooperative;
 import com.mycompany.myapp.repository.CooperativeRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link CooperativeResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class CooperativeResourceIT {
 
     private static final Long DEFAULT_COOPERATIVE_ID = 1L;

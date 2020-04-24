@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CoopcycleappSharedModule } from 'app/shared/shared.module';
+import { CoopcycleSharedModule } from 'app/shared/shared.module';
 
 import { AuditsComponent } from './audits.component';
 
 import { auditsRoute } from './audits.route';
 
 @NgModule({
-  imports: [CoopcycleappSharedModule, RouterModule.forChild([auditsRoute])],
+  imports: [CoopcycleSharedModule, RouterModule.forChild([auditsRoute])],
   declarations: [AuditsComponent]
 })
 export class AuditsModule {}

@@ -1,32 +1,32 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <div *ngIf="basket">
-            <h2><span jhiTranslate="coopcycleappApp.basket.detail.title">Basket</span> {{ basket.id }}</h2>
+            <h2><span jhiTranslate="coopcycleApp.basket.detail.title">Basket</span> {{ basket.id }}</h2>
 
             <hr>
 
             <jhi-alert-error></jhi-alert-error>
 
             <dl class="row-md jh-entity-details">
-                <dt><span jhiTranslate="coopcycleappApp.basket.basketId">Basket Id</span></dt>
+                <dt><span jhiTranslate="coopcycleApp.basket.basketId">Basket Id</span></dt>
                 <dd>
                     <span>{{ basket.basketId }}</span>
                 </dd>
-                <dt><span jhiTranslate="coopcycleappApp.basket.basketState">Basket State</span></dt>
+                <dt><span jhiTranslate="coopcycleApp.basket.basketState">Basket State</span></dt>
                 <dd>
-                    <span jhiTranslate="{{ 'coopcycleappApp.BasketState.' + basket.basketState }}">{{ basket.basketState }}</span>
+                    <span jhiTranslate="{{ 'coopcycleApp.BasketState.' + basket.basketState }}">{{ basket.basketState }}</span>
                 </dd>
-                <dt><span jhiTranslate="coopcycleappApp.basket.user">User</span></dt>
+                <dt><span jhiTranslate="coopcycleApp.basket.user">User</span></dt>
                 <dd>
                     {{ basket.user?.id }}
                 </dd>
-                <dt><span jhiTranslate="coopcycleappApp.basket.course">Course</span></dt>
+                <dt><span jhiTranslate="coopcycleApp.basket.course">Course</span></dt>
                 <dd>
                     <div *ngIf="basket.course">
                         <a [routerLink]="['/course', basket.course?.id, 'view']">{{ basket.course?.id }}</a>
                     </div>
                 </dd>
-                <dt><span jhiTranslate="coopcycleappApp.basket.customer">Customer</span></dt>
+                <dt><span jhiTranslate="coopcycleApp.basket.customer">Customer</span></dt>
                 <dd>
                     {{ basket.customer?.id }}
                 </dd>

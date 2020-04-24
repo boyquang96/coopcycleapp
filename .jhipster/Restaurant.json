@@ -30,7 +30,7 @@
             "ownerSide": false
         }
     ],
-    "changelogDate": "20200424004200",
+    "changelogDate": "20200319012300",
     "javadoc": "The Restaurant entity.",
     "entityTableName": "restaurant",
     "dto": "no",

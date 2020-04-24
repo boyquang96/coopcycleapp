@@ -39,7 +39,7 @@ export const restaurantRoute: Routes = [
     component: RestaurantComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.restaurant.home.title'
+      pageTitle: 'coopcycleApp.restaurant.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const restaurantRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.restaurant.home.title'
+      pageTitle: 'coopcycleApp.restaurant.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const restaurantRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.restaurant.home.title'
+      pageTitle: 'coopcycleApp.restaurant.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const restaurantRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.restaurant.home.title'
+      pageTitle: 'coopcycleApp.restaurant.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

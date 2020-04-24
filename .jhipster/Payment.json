@@ -11,7 +11,7 @@
         }
     ],
     "relationships": [],
-    "changelogDate": "20200424004600",
+    "changelogDate": "20200319012700",
     "javadoc": "The Payment entity.",
     "entityTableName": "payment",
     "dto": "no",

@@ -24,14 +24,14 @@ describe('Payment e2e test', () => {
     await navBarPage.goToEntity('payment');
     paymentComponentsPage = new PaymentComponentsPage();
     await browser.wait(ec.visibilityOf(paymentComponentsPage.title), 5000);
-    expect(await paymentComponentsPage.getTitle()).to.eq('coopcycleappApp.payment.home.title');
+    expect(await paymentComponentsPage.getTitle()).to.eq('coopcycleApp.payment.home.title');
     await browser.wait(ec.or(ec.visibilityOf(paymentComponentsPage.entities), ec.visibilityOf(paymentComponentsPage.noResult)), 1000);
   });
 
   it('should load create Payment page', async () => {
     await paymentComponentsPage.clickOnCreateButton();
     paymentUpdatePage = new PaymentUpdatePage();
-    expect(await paymentUpdatePage.getPageTitle()).to.eq('coopcycleappApp.payment.home.createOrEditLabel');
+    expect(await paymentUpdatePage.getPageTitle()).to.eq('coopcycleApp.payment.home.createOrEditLabel');
     await paymentUpdatePage.cancel();
   });
 
@@ -53,7 +53,7 @@ describe('Payment e2e test', () => {
     await paymentComponentsPage.clickOnLastDeleteButton();
 
     paymentDeleteDialog = new PaymentDeleteDialog();
-    expect(await paymentDeleteDialog.getDialogTitle()).to.eq('coopcycleappApp.payment.delete.question');
+    expect(await paymentDeleteDialog.getDialogTitle()).to.eq('coopcycleApp.payment.delete.question');
     await paymentDeleteDialog.clickOnConfirmButton();
 
     expect(await paymentComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

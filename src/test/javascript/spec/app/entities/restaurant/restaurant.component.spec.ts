@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { HttpHeaders, HttpResponse } from '@angular/common/http';
 
-import { CoopcycleappTestModule } from '../../../test.module';
+import { CoopcycleTestModule } from '../../../test.module';
 import { RestaurantComponent } from 'app/entities/restaurant/restaurant.component';
 import { RestaurantService } from 'app/entities/restaurant/restaurant.service';
 import { Restaurant } from 'app/shared/model/restaurant.model';
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [CoopcycleappTestModule],
+        imports: [CoopcycleTestModule],
         declarations: [RestaurantComponent]
       })
         .overrideTemplate(RestaurantComponent, '')

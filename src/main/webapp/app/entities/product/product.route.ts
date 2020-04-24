@@ -39,7 +39,7 @@ export const productRoute: Routes = [
     component: ProductComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.product.home.title'
+      pageTitle: 'coopcycleApp.product.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const productRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.product.home.title'
+      pageTitle: 'coopcycleApp.product.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const productRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.product.home.title'
+      pageTitle: 'coopcycleApp.product.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const productRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'coopcycleappApp.product.home.title'
+      pageTitle: 'coopcycleApp.product.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

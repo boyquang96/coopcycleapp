@@ -1,10 +1,10 @@
 <div>
     <h2 id="page-heading">
-        <span jhiTranslate="coopcycleappApp.basket.home.title">Baskets</span>
+        <span jhiTranslate="coopcycleApp.basket.home.title">Baskets</span>
 
         <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-basket" [routerLink]="['/basket/new']">
             <fa-icon icon="plus"></fa-icon>
-            <span  jhiTranslate="coopcycleappApp.basket.home.createLabel">
+            <span  jhiTranslate="coopcycleApp.basket.home.createLabel">
             Create a new Basket
             </span>
         </button>
@@ -15,7 +15,7 @@
     <jhi-alert></jhi-alert>
 
     <div class="alert alert-warning" id="no-result" *ngIf="baskets?.length === 0">
-        <span jhiTranslate="coopcycleappApp.basket.home.notFound">No baskets found</span>
+        <span jhiTranslate="coopcycleApp.basket.home.notFound">No baskets found</span>
     </div>
 
     <div class="table-responsive" id="entities" *ngIf="baskets?.length > 0">
@@ -23,11 +23,11 @@
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.basket.basketId">Basket Id</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.basket.basketState">Basket State</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.basket.user">User</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.basket.course">Course</span></th>
-                    <th scope="col" ><span jhiTranslate="coopcycleappApp.basket.customer">Customer</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.basket.basketId">Basket Id</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.basket.basketState">Basket State</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.basket.user">User</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.basket.course">Course</span></th>
+                    <th scope="col" ><span jhiTranslate="coopcycleApp.basket.customer">Customer</span></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -35,7 +35,7 @@
                 <tr *ngFor="let basket of baskets ;trackBy: trackId">
                     <td><a [routerLink]="['/basket', basket.id, 'view']">{{ basket.id }}</a></td>
                     <td>{{ basket.basketId }}</td>
-                    <td jhiTranslate="{{ 'coopcycleappApp.BasketState.' + basket.basketState }}">{{ basket.basketState }}</td>
+                    <td jhiTranslate="{{ 'coopcycleApp.BasketState.' + basket.basketState }}">{{ basket.basketState }}</td>
                     <td>
                         {{ basket.user?.id }}
                     </td>

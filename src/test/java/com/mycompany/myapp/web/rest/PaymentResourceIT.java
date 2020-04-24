@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Payment;
 import com.mycompany.myapp.repository.PaymentRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -31,7 +31,7 @@ import com.mycompany.myapp.domain.enumeration.PaymentMethod;
 /**
  * Integration tests for the {@link PaymentResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class PaymentResourceIT {
 
     private static final PaymentMethod DEFAULT_PAYMENT_METHOD = PaymentMethod.CB;

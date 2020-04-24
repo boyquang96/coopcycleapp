@@ -1,6 +1,6 @@
 package com.mycompany.myapp.web.rest;
 
-import com.mycompany.myapp.CoopcycleappApp;
+import com.mycompany.myapp.CoopcycleApp;
 import com.mycompany.myapp.domain.Product;
 import com.mycompany.myapp.repository.ProductRepository;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
@@ -32,7 +32,7 @@ import com.mycompany.myapp.domain.enumeration.Disponibility;
 /**
  * Integration tests for the {@link ProductResource} REST controller.
  */
-@SpringBootTest(classes = CoopcycleappApp.class)
+@SpringBootTest(classes = CoopcycleApp.class)
 public class ProductResourceIT {
 
     private static final BigDecimal DEFAULT_PRICE = new BigDecimal(0);
